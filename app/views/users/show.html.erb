@@ -7,8 +7,20 @@
     <dl class="dl-horizontal">
       <dt>Username</dt>
       <dd><%= @user.username %></dd>
-
+<dt>Favorites</dt>
+      <dd>
+        <dl>
+      <% @user.favorites.each do |zebra| %>
+      <li class="list-group-item">
+        <%= zebra.dish.name %> at <%= zebra.venue.name %>
+      </li>
+      <% end %>
     </dl>
+
+
+
+
+          </dl>
 
     <div class="btn-group btn-group-justified">
       <a href="/users" class="btn btn-primary">
