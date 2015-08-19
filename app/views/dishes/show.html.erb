@@ -48,8 +48,12 @@
                   <label for="notes" class="control-label">
                     Notes
                   </label>
-                  <textarea id="notes" name="notes" placeholder="Notes" class="form-control" rows="3"><%= :notes %></textarea>
+                  <textarea id="notes" name="notes" placeholder="Notes" class="form-control" rows="3"></textarea>
                 </div>
+<!-- Label and input for dish_id -->
+              <input name="dish_id" type="hidden" value="<%= @dish.id %>"
+
+              >
 
                 <button class="btn btn-success">
                   Create Favorite
